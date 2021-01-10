@@ -9,15 +9,36 @@
         android:id="@+id/primeiroFragment"
         android:name="br.com.ijbuenoapks.navigationbetweenwindows.PrimeiroFragment"
         android:label="fragment_primeiro"
-        tools:layout="@layout/fragment_primeiro" />
+        tools:layout="@layout/fragment_primeiro" >
+        <action
+            android:id="@+id/navegarPrimeiroParaSegundo"
+            app:destination="@id/segundoFragment" />
+        <action
+            android:id="@+id/navegarPrimeiroParaTerceiro"
+            app:destination="@id/terceiroFragment" />
+    </fragment>
     <fragment
         android:id="@+id/segundoFragment"
         android:name="br.com.ijbuenoapks.navigationbetweenwindows.SegundoFragment"
         android:label="fragment_segundo"
-        tools:layout="@layout/fragment_segundo" />
+        tools:layout="@layout/fragment_segundo" >
+        <action
+            android:id="@+id/navegarSegundoParaTerceiro"
+            app:destination="@id/terceiroFragment" />
+        <action
+            android:id="@+id/navegarSegundoParaPrimeiro"
+            app:destination="@id/primeiroFragment" />
+    </fragment>
     <fragment
         android:id="@+id/terceiroFragment"
         android:name="br.com.ijbuenoapks.navigationbetweenwindows.TerceiroFragment"
         android:label="fragment_terceiro"
-        tools:layout="@layout/fragment_terceiro" />
+        tools:layout="@layout/fragment_terceiro" >
+        <action
+            android:id="@+id/navegarTerceiroParaSegundo"
+            app:destination="@id/segundoFragment" />
+        <action
+            android:id="@+id/navegarTerceiroParaPrimeiro"
+            app:destination="@id/primeiroFragment" />
+    </fragment>
 </navigation>
