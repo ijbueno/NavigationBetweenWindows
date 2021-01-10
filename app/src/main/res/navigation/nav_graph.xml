@@ -10,4 +10,14 @@
         android:name="br.com.ijbuenoapks.navigationbetweenwindows.PrimeiroFragment"
         android:label="fragment_primeiro"
         tools:layout="@layout/fragment_primeiro" />
+    <fragment
+        android:id="@+id/segundoFragment"
+        android:name="br.com.ijbuenoapks.navigationbetweenwindows.SegundoFragment"
+        android:label="fragment_segundo"
+        tools:layout="@layout/fragment_segundo" />
+    <fragment
+        android:id="@+id/terceiroFragment"
+        android:name="br.com.ijbuenoapks.navigationbetweenwindows.TerceiroFragment"
+        android:label="fragment_terceiro"
+        tools:layout="@layout/fragment_terceiro" />
 </navigation>
